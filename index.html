@@ -9,27 +9,173 @@
     }
 
     body {
-        background-color: rgb(31,31,46);
+        background-color: rgb(31, 31, 46);
     }
 
-    h1 {
+    h2 {
         text-align: center;
-        color: rgb(223, 208, 226);
-        font-family:'Montserrat';
+        color: rgb(230, 189, 238);
+        font-family: 'Montserrat';
+        font-size: 120px;
     }
 
-    p {
+    .ref {
         text-align: center;
-        color: rgb(223, 208, 226);
-        font-family:'Montserrat';
+        position: relative;
+        color: rgb(230, 189, 238);
+        font-family: 'Montserrat';
+        font-size: 10px;
+        left: 10%;
+    }
+
+    .backdrop {
+        background-color: rgb(49, 49, 71);
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        border-radius: 25px;
+    }
+
+    .backdrop:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    .Parent {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .Profile {
+        border-radius: 50%;
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        top: 10%;
+    }
+
+    .Name {
+        text-align: center;
+        color: rgb(212, 181, 96);
+        font-family: 'Montserrat';
+        font-size: 69px;
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        top: 60%;
+    }
+
+    .Resume {
+        position: absolute;
+        filter: invert(100%);
+        width: 10%;
+        left: 16%;
+        top: 80%;
+    }
+
+    .Linkedin {
+        position: absolute;
+        filter: invert(100%);
+        width: 9%;
+        left: 36%;
+        top: 80.5%;
+    }
+
+    .Email {
+        position: absolute;
+        filter: invert(100%);
+        width: 10%;
+        left: 56%;
+        top: 80%;
+    }
+
+    .Phone {
+        position: absolute;
+        filter: invert(100%);
+        width: 9%;
+        left: 76%;
+        top: 80.25%;
     }
 </style>
 
 <body>
     <div class="center">
-        <h1>Hello World! 123</h1>
-        <p>This is another paragraph.</p>
+        <h2>Hello!</h2>
+        <div class="Parent">
+            <div class="backdrop"></div>
+            <img class="Profile" src="images/A.jpg">
+            <h2 class="Name">Aloysius Chun</h2>
+            <a href="files/Aloysius_Chun_Resume.pdf" download>
+                <img class="Resume" src="images/resume.png">
+            </a>
+            <a href="https://www.linkedin.com/in/aloysius-chun-160985121">               
+                <img class="Linkedin" src="images/linkedin.png">
+            </a>
+            
+            <a href="mailto: aloysius_chun@hotmail.com">
+                <img class="Email" src="images/email.png">
+            </a>
+            <a href="tel:+97281423">
+                <img class="Phone" src="images/telephone.png">
+            </a>
+        </div>
+        <div>
+            <h2></h2>
+        </div>
+        <div class="Parent">
+            <div class="backdrop"></div>
+            <img class="Profile" src="images/B.jpg">
+            <h2 class="Name">Gabriel Wong</h2>
+            <a href="files/Gabriel_Wong_Resume.pdf" download>
+                <img class="Resume" src="images/resume.png">
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-wong-ba1493101">               
+                <img class="Linkedin" src="images/linkedin.png">
+            </a>
+            
+            <a href="mailto: GabrielWong.cj@gmail.com">
+                <img class="Email" src="images/email.png">
+            </a>
+            <a href="tel:+83835041">
+                <img class="Phone" src="images/telephone.png">
+            </a>
+        </div>
+        <div>
+            <h2></h2>
+        </div>
+        <div class="Parent">
+            <div class="backdrop"></div>
+            <img class="Profile" src="images/C.jpg">
+            <h2 class="Name">Clarence Chye</h2>
+            <a href="files/Clarence_Chye_Resume.pdf" download>
+                <img class="Resume" src="images/resume.png">
+            </a>
+            <a href="https://www.linkedin.com/in/clarence-chye-556639132/">               
+                <img class="Linkedin" src="images/linkedin.png">
+            </a>
+            
+            <a href="mailto: clarencechye2@gmail.com">
+                <img class="Email" src="images/email.png">
+            </a>
+            <a href="tel:+96268618">
+                <img class="Phone" src="images/telephone.png">
+            </a>
+        </div>
+        <div>
+            <h2></h2>
+        </div>
+        <a class = "ref" href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Gregor Cresnar -
+            Flaticon</a>
+        <a class = "ref" href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik -
+            Flaticon</a>
+        <a class = "ref" href="https://www.flaticon.com/free-icons/cv" title="CV icons">CV icons created by spaceman.design - Flaticon</a>
+        <a class = "ref" href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik -
+            Flaticon</a>
     </div>
+
 </body>
 
 </html>
